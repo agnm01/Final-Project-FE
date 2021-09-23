@@ -1,8 +1,8 @@
 # Hello World!
 
-### This is the last project within the Frontend course in the Principal33 internship. (We love you Marian :heart: )
+### This is the last project within the Frontend course in the Principal33 internship (We love you Marian :heart:).
 
-### This project is a team project and we need to make a portofolio website where we put our CV's.
+### This project is a team project and we need to make a portofolio website where we put our CV's, using Frontend (Vue JS) and Backend (.Net).
 
 ### The team members are: Emanuela Nimigean, Gabriel Negreanu, Radu Parpalea and Patrick Pacurar.
 
