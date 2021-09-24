@@ -1,17 +1,20 @@
 <template>
   <v-container>
-    <Login/>
+    <Login></Login>
   </v-container>
 </template>
 
 <script>
-
-import Login from '@/components/Login.vue';
+/* eslint-disable */
+import Login from "../components/LoginPage/Login.vue";
+/* eslint-disable */
 
 export default {
-  name: 'Home',
+  /* eslint-disable */
+  name: "Home",
   components: {
     Login,
   },
 };
+/* eslint-disable */
 </script>
