@@ -1,4 +1,5 @@
 <template>
+<body>
   <div class="center">
       <h1>Login</h1>
       <form method="post">
@@ -19,6 +20,7 @@
         </div>
       </form>
     </div>
+</body>
 </template>
 
 <script>
@@ -27,7 +29,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap');
 *{
   margin: 0;
