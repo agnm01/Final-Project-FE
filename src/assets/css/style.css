@@ -142,7 +142,7 @@ h6 {
 #header {
   position: fixed;
   top: 0;
-  left: 0;
+  left: 0.2rem;
   bottom: 0;
   z-index: 9997;
   transition: all 0.5s;
@@ -158,6 +158,11 @@ h6 {
     background: #fff;
     border-right: 1px solid #e6e9ec;
     left: -300px;
+  }
+
+  body {
+    margin-left: 20px;
+    margin-right: 10px;
   }
 }
 
@@ -544,6 +549,10 @@ section {
 # Interests
 --------------------------------------------------------------*/
 
+.interests {
+  margin-right: 2rem;
+}
+
 .interests .icon-box {
   display: flex;
   align-items: center;
@@ -576,6 +585,10 @@ section {
 # Resume
 --------------------------------------------------------------*/
 
+.resume {
+  margin-right: 2rem;
+}
+
 .resume .resume-title {
   font-size: 26px;
   font-weight: 700;
@@ -589,6 +602,7 @@ section {
   margin-top: -2px;
   border-left: 2px solid #0563bb;
   position: relative;
+  margin-left: 1rem;
 }
 
 .resume .resume-item h4 {
@@ -1247,18 +1261,18 @@ section {
   position: relative;
   font-family: "Poppins", sans-serif;
   padding: 0;
-  margin: 0 0 15px 0;
+  margin: 0 0 15px 10%;
 }
 
 #footer p {
   font-size: 15;
   font-style: italic;
   padding: 0;
-  margin: 0 0 40px 0;
+  margin: 0 0 40px 10%;
 }
 
 #footer .social-links {
-  margin: 0 0 40px 0;
+  margin: 0 0 40px 10%;
 }
 
 #footer .social-links a {
@@ -1283,7 +1297,7 @@ section {
 }
 
 #footer .copyright {
-  margin: 0 0 5px 0;
+  margin: 0 0 5px 10%;
 }
 
 #footer .credits {
