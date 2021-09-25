@@ -1,25 +1,35 @@
 <template>
-  <div class="about">
-    <h1>This is a test page</h1>
-  </div>
+  <v-container>
+    <Header></Header>
+    <TeamMembers></TeamMembers>
+    <Footer></Footer>
+    <BackToTop></BackToTop>
+  </v-container>
 </template>
 
 <script>
-// import Header from "../components/PortofolioPage/Header.vue";
+import Header from "../components/PortofolioPage/Header.vue";
 // import Hero from "../components/PortofolioPage/Hero.vue";
 // import About from "../components/PortofolioPage/About.vue";
 // import Skills from "../components/PortofolioPage/Skills.vue";
 // import Interests from "../components/PortofolioPage/Interests.vue";
 // import Resume from "../components/PortofolioPage/Resume.vue";
 // import Tools from "../components/PortofolioPage/Tools.vue";
-// import TeamMembers from "../components/PortofolioPage/TeamMembers.vue";
+import TeamMembers from "../components/PortofolioPage/TeamMembers.vue";
+import BackToTop from "../components/PortofolioPage/BackToTop.vue";
+import Footer from "../components/PortofolioPage/Footer.vue";
 
 export default {
-  name: "Portfolio",
-  components: {}, // de pus aici fiecare componenta
+  name: "Portofolio",
+  components: {
+    Header,
+    Footer,
+    BackToTop,
+    TeamMembers,
+  },
 };
 </script>
 
-<style>
+<style scoped>
 @import "../assets/css/style.css";
 </style>
