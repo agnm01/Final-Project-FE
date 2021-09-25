@@ -1,11 +1,9 @@
 <template>
-  <div class="about">
-    <h1>This is a test page</h1>
-  </div>
+  <Header></Header>
 </template>
 
 <script>
-// import Header from "../components/PortofolioPage/Header.vue";
+import Header from "../components/PortofolioPage/Header.vue";
 // import Hero from "../components/PortofolioPage/Hero.vue";
 // import About from "../components/PortofolioPage/About.vue";
 // import Skills from "../components/PortofolioPage/Skills.vue";
@@ -16,7 +14,9 @@
 
 export default {
   name: "Portfolio",
-  components: {}, // de pus aici fiecare componenta
+  components: {
+    Header,
+  }, // de pus aici fiecare componenta
 };
 </script>
 
