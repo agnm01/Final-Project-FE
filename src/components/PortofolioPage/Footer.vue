@@ -15,7 +15,8 @@
       </div>
       <div class="copyright">
         Team
-        <strong><span>Nici prea prea, nici foarte foarte</span></strong> with ❤
+        <strong><span>Nici Prea Prea, Nici Foarte Foarte</span></strong
+        >, with ❤
       </div>
     </div>
   </footer>
