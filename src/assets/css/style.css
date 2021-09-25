@@ -12,6 +12,15 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: #272829;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 a {
@@ -39,8 +48,6 @@ h6 {
 
 .back-to-top {
   position: fixed;
-  visibility: hidden;
-  opacity: 0;
   right: 15px;
   bottom: 15px;
   z-index: 996;
@@ -49,6 +56,9 @@ h6 {
   height: 40px;
   border-radius: 50px;
   transition: all 0.4s;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .back-to-top i {
@@ -138,6 +148,8 @@ h6 {
   transition: all 0.5s;
   padding: 15px;
   overflow-y: auto;
+  display: flex;
+  align-items: center;
 }
 
 @media (max-width: 992px) {

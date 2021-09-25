@@ -6,7 +6,6 @@
 
 <script>
 import Login from "../components/LoginPage/Login.vue";
-
 export default {
   name: "Home",
   components: {
