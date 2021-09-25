@@ -1,15 +1,14 @@
 <template>
   <v-container>
-    <Login/>
+    <Login></Login>
   </v-container>
 </template>
 
 <script>
-
-import Login from '@/components/Login.vue';
+import Login from "../components/LoginPage/Login.vue";
 
 export default {
-  name: 'Home',
+  name: "Home",
   components: {
     Login,
   },
