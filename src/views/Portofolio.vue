@@ -1,6 +1,7 @@
 <template>
   <v-container>
     <Header></Header>
+    <Resume></Resume>
     <TeamMembers></TeamMembers>
     <Footer></Footer>
     <BackToTop></BackToTop>
@@ -13,7 +14,7 @@ import Header from "../components/PortofolioPage/Header.vue";
 // import About from "../components/PortofolioPage/About.vue";
 // import Skills from "../components/PortofolioPage/Skills.vue";
 // import Interests from "../components/PortofolioPage/Interests.vue";
-// import Resume from "../components/PortofolioPage/Resume.vue";
+import Resume from "../components/PortofolioPage/Resume.vue";
 // import Tools from "../components/PortofolioPage/Tools.vue";
 import TeamMembers from "../components/PortofolioPage/TeamMembers.vue";
 import BackToTop from "../components/PortofolioPage/BackToTop.vue";
@@ -26,6 +27,7 @@ export default {
     Footer,
     BackToTop,
     TeamMembers,
+    Resume,
   },
 };
 </script>

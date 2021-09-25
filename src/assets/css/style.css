@@ -13,6 +13,7 @@ body {
   font-family: "Open Sans", sans-serif;
   color: #272829;
   margin: 0;
+  margin-left: 1.5rem;
   padding: 0;
 }
 
@@ -589,6 +590,7 @@ section {
   margin-top: -2px;
   border-left: 2px solid #0563bb;
   position: relative;
+  margin-left: 1rem;
 }
 
 .resume .resume-item h4 {
