@@ -14,17 +14,6 @@
 
         <div class="row">
           <div class="col-lg-6">
-            <!-- <h3 class="resume-title">Sumary</h3>
-                        <div class="resume-item pb-0">
-                            <h4>Brandon Johnson</h4>
-                            <p><em>Innovative and deadline-driven Graphic Designer with 3+ years of experience designing and developing user-centered digital/print marketing material from initial concept to final, polished deliverable.</em></p>
-                            <ul>
-                                <li>Portland par 127,Orlando, FL</li>
-                                <li>(123) 456-7891</li>
-                                <li>alice.barkley@example.com</li>
-                            </ul>
-                        </div> -->
-
             <h3 class="resume-title">Education</h3>
             <div class="resume-item">
               <h4>Master of Fine Arts &amp; Graphic Design</h4>
