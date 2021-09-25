@@ -142,7 +142,7 @@ h6 {
 #header {
   position: fixed;
   top: 0;
-  left: 0.5rem;
+  left: 0.2rem;
   bottom: 0;
   z-index: 9997;
   transition: all 0.5s;
@@ -549,6 +549,10 @@ section {
 # Interests
 --------------------------------------------------------------*/
 
+.interests {
+  margin-right: 2rem;
+}
+
 .interests .icon-box {
   display: flex;
   align-items: center;
@@ -580,6 +584,10 @@ section {
 /*--------------------------------------------------------------
 # Resume
 --------------------------------------------------------------*/
+
+.resume {
+  margin-right: 2rem;
+}
 
 .resume .resume-title {
   font-size: 26px;

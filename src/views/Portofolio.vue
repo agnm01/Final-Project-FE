@@ -1,6 +1,7 @@
 <template>
   <v-container>
     <Header></Header>
+    <Interests></Interests>
     <Resume></Resume>
     <Tools></Tools>
     <TeamMembers></TeamMembers>
@@ -14,7 +15,7 @@ import Header from "../components/PortofolioPage/Header.vue";
 // import Hero from "../components/PortofolioPage/Hero.vue";
 // import About from "../components/PortofolioPage/About.vue";
 // import Skills from "../components/PortofolioPage/Skills.vue";
-// import Interests from "../components/PortofolioPage/Interests.vue";
+import Interests from "../components/PortofolioPage/Interests.vue";
 import Resume from "../components/PortofolioPage/Resume.vue";
 import Tools from "../components/PortofolioPage/Tools.vue";
 import TeamMembers from "../components/PortofolioPage/TeamMembers.vue";
@@ -30,6 +31,7 @@ export default {
     TeamMembers,
     Resume,
     Tools,
+    Interests,
   },
 };
 </script>
