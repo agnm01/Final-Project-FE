@@ -1,6 +1,9 @@
 <template>
   <v-container>
     <Header></Header>
+    <!-- <Hero></Hero>
+    <About></About>
+    <Skills></Skills> -->
     <Interests></Interests>
     <Resume></Resume>
     <Tools></Tools>
@@ -32,6 +35,9 @@ export default {
     Resume,
     Tools,
     Interests,
+    // Hero,
+    // About,
+    // Skills,
   },
 };
 </script>
