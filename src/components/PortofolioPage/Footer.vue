@@ -9,8 +9,7 @@
         }}
       </h3>
       <p>
-        Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi
-        fuga maxime saepe commodi placeat.
+        {{ applicationState.userInfo.description }}
       </p>
       <div class="social-links">
         <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>

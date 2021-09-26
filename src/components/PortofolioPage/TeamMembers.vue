@@ -12,17 +12,21 @@
             <div>
               <div class="testimonial-item">
                 <img
-                  src="@/assets/testimonials-1.jpg"
+                  src="@/assets/profile-img.jpeg"
                   class="testimonial-img"
                   alt=""
                 />
-                <h3>Saul Goodman</h3>
-                <h4>Ceo &amp; Founder</h4>
+                <h3>
+                  {{
+                    applicationState.userInfo.firstName +
+                    " " +
+                    applicationState.userInfo.lastName
+                  }}
+                </h3>
+                <h4>{{ applicationState.userInfo.title }}</h4>
                 <p>
-                  Proin iaculis purus consequat sem cure digni ssim donec
-                  porttitora entum suscipit rhoncus. Accusantium quam, ultricies
-                  eget id, aliquam eget nibh et. Maecen aliquam, risus at
-                  semper.
+                  {{ applicationState.userInfo.description }} si sunt sefu' la
+                  buzunaru' lui tati (momentan).
                 </p>
               </div>
             </div>
@@ -74,5 +78,13 @@
 </template>
 
 <script>
-export default {};
+import { applicationState } from "../../state";
+
+export default {
+  data() {
+    return {
+      applicationState,
+    };
+  },
+};
 </script>
