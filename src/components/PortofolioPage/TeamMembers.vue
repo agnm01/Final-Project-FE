@@ -6,14 +6,10 @@
           <h2>Team members</h2>
         </div>
 
-        <div
-          class="testimonials-slider swiper"
-          data-aos="fade-up"
-          data-aos-delay="100"
-        >
-          <div class="swiper-wrapper">
+        <div data-aos="fade-up" data-aos-delay="100">
+          <div class="teammates">
             <!-- Start teammate item -->
-            <div class="swiper-slide">
+            <div>
               <div class="testimonial-item">
                 <img
                   src="@/assets/testimonials-1.jpg"
@@ -33,10 +29,10 @@
             <!-- End teammate item -->
 
             <!-- Start teammate item -->
-            <div class="swiper-slide">
+            <div>
               <div class="testimonial-item">
                 <img
-                  src="assets/img/testimonials/testimonials-2.jpg"
+                  src="@/assets/testimonials-1.jpg"
                   class="testimonial-img"
                   alt=""
                 />
@@ -53,10 +49,10 @@
             <!-- End teammate item -->
 
             <!-- Start teammate item -->
-            <div class="swiper-slide">
+            <div>
               <div class="testimonial-item">
                 <img
-                  src="assets/img/testimonials/testimonials-3.jpg"
+                  src="@/assets/testimonials-1.jpg"
                   class="testimonial-img"
                   alt=""
                 />
@@ -71,7 +67,6 @@
             </div>
             <!-- End teammate item -->
           </div>
-          <div class="swiper-pagination"></div>
         </div>
       </div>
     </section>

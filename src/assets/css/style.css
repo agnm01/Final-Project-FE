@@ -1317,3 +1317,9 @@ section {
 #teammates {
   margin-right: 3rem;
 }
+
+.teammates {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
