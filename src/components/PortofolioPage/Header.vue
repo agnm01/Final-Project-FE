@@ -43,6 +43,11 @@
             ><i class="bx bx-group"></i> <span>Team Members</span></a
           >
         </li>
+        <li>
+          <a class="nav-link scrollto"
+            ><i class="bx bx-log-out"></i> <span>Logout</span></a
+          >
+        </li>
       </ul>
     </nav>
   </header>
