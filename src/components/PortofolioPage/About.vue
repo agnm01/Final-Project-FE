@@ -4,23 +4,16 @@
       <div class="container" data-aos="fade-up">
         <div class="section-title">
           <h2>About</h2>
-          <p>
-            Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
-            aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
-            quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
-            fugiat sit in iste officiis commodi quidem hic quas.
-          </p>
         </div>
 
         <div class="row">
           <div class="col-lg-4">
-            <img src="@/assets/profile-img.jpg" class="img-fluid" />
+            <img src="@/assets/profile-img.jpeg" class="img-fluid" />
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content">
             <h3>UI/UX Designer &amp; Web Developer.</h3>
             <p class="fst-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              {{ applicationState.userInfo.description }}
             </p>
             <div class="row">
               <div class="col-lg-6">
@@ -81,7 +74,13 @@
 </template>
 
 <script>
-export default {};
-</script>
+import { applicationState } from "../../state";
 
-<style></style>
+export default {
+  data() {
+    return {
+      applicationState,
+    };
+  },
+};
+</script>

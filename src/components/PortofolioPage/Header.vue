@@ -45,7 +45,7 @@
           >
         </li>
         <li>
-          <a class="nav-link scrollto"
+          <a @click="logout" class="nav-link scrollto"
             ><i class="bx bx-log-out"></i> <span>Logout</span></a
           >
         </li>
@@ -55,5 +55,19 @@
 </template>
 
 <script>
-export default {};
+import { applicationState } from "../../state";
+
+export default {
+  data() {
+    return {
+      applicationState,
+    };
+  },
+  methods: {
+    logout() {
+      this.applicationState.isLoggedIn = false;
+      this.$router.push({ name: "Home" });
+    },
+  },
+};
 </script>
