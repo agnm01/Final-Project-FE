@@ -81,7 +81,6 @@
 </template>
 
 <script>
-import "@/assets/js/main-from-template.js";
 export default {};
 </script>
 
