@@ -14,7 +14,6 @@
 </template>
 
 <script>
-//import "../assets/js/main-from-template.js";
 import Header from "../components/PortofolioPage/Header.vue";
 import Hero from "../components/PortofolioPage/Hero.vue";
 import About from "../components/PortofolioPage/About.vue";
