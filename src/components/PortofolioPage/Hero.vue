@@ -4,10 +4,7 @@
       <h1>Brandon Johnson</h1>
       <p>
         I'm a
-        <span
-          class="typed"
-          data-typed-items="Designer, Developer, Freelancer, Photographer"
-        ></span>
+        <span class="typed" data-typed-items=""></span>
       </p>
       <div class="social-links">
         <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
