@@ -16,7 +16,7 @@
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <img
-                  src="assets/img/testimonials/testimonials-1.jpg"
+                  src="@/assets/testimonials-1.jpg"
                   class="testimonial-img"
                   alt=""
                 />
