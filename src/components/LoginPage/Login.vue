@@ -14,7 +14,15 @@
           <label>Password</label>
         </div>
         <div class="pass">Forgot Password?</div>
-        <button type="button" v-on:click="login">Login</button>
+        <button
+          type="button"
+          class="btn btn-light btn-lg"
+          id="login"
+          style="background-color: #0563bb; color: white"
+          v-on:click="login"
+        >
+          Login
+        </button>
         <div class="signup_link">Not a member? Too bad :(</div>
       </form>
     </div>

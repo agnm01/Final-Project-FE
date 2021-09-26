@@ -9,8 +9,10 @@
         }}
       </h1>
       <p>
-        I'm an
-        <span class="typed">{{ applicationState.userInfo.title }}</span>
+        I'm
+        <span class="typed"
+          ><strong>{{ applicationState.userInfo.title }}</strong></span
+        >
       </p>
       <div class="social-links">
         <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
