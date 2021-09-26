@@ -2,19 +2,19 @@
   <body>
     <div class="center">
       <h1>Login</h1>
-      <form method="post">
+      <form >
         <div class="txt_field">
-          <input type="text" required />
+          <input type="text" v-model="username" required />
           <span></span>
           <label>Username</label>
         </div>
         <div class="txt_field">
-          <input type="password" required />
+          <input type="password" v-model="password" required />
           <span></span>
           <label>Password</label>
         </div>
         <div class="pass">Forgot Password?</div>
-        <input type="submit" value="Login" />
+        <input type="submit" v-on:click="login" value="login" />
         <div class="signup_link">Not a member? Too bad :(</div>
       </form>
     </div>
@@ -22,7 +22,33 @@
 </template>
 
 <script>
-export default {};
+import axios from  'axios';
+// import router from '../../router/index.js';
+
+export default {
+  name:"Login",
+  data()
+  {
+    return {
+      username:'',
+      password:''
+    }
+  },
+  methods:{
+    async login()
+    {
+      let result=await axios.get(
+        `https://localhost:44334/Profile/Login?username=${this.username}&password=${this.password}`
+      );
+      console.warn(result);
+      if(result.status==200 && result.data.length>0)
+      {
+        localStorage.setItem("user-info",JSON.stringify(result.data[0]));
+        this.$router.push({name:'Portofolio'});
+      }
+    }
+  }
+};
 </script>
 
 <style scoped>
