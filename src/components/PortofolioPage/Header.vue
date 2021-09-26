@@ -4,7 +4,7 @@
     <nav id="navbar" class="navbar nav-menu">
       <ul>
         <li>
-          <a href="#/portofolio" class="nav-link scrollto active"
+          <a href="#/home" class="nav-link scrollto active"
             ><i class="bx bx-home"></i> <span>Home</span></a
           >
         </li>
