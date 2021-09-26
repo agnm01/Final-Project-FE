@@ -1,9 +1,9 @@
 <template>
   <v-container>
     <Header></Header>
-    <!-- <Hero></Hero>
+    <Hero></Hero>
     <About></About>
-    <Skills></Skills> -->
+    <Skills></Skills>
     <Interests></Interests>
     <Resume></Resume>
     <Tools></Tools>
@@ -15,9 +15,9 @@
 
 <script>
 import Header from "../components/PortofolioPage/Header.vue";
-// import Hero from "../components/PortofolioPage/Hero.vue";
-// import About from "../components/PortofolioPage/About.vue";
-// import Skills from "../components/PortofolioPage/Skills.vue";
+import Hero from "../components/PortofolioPage/Hero.vue";
+import About from "../components/PortofolioPage/About.vue";
+import Skills from "../components/PortofolioPage/Skills.vue";
 import Interests from "../components/PortofolioPage/Interests.vue";
 import Resume from "../components/PortofolioPage/Resume.vue";
 import Tools from "../components/PortofolioPage/Tools.vue";
@@ -35,9 +35,9 @@ export default {
     Resume,
     Tools,
     Interests,
-    // Hero,
-    // About,
-    // Skills,
+    Hero,
+    About,
+    Skills,
   },
 };
 </script>
@@ -45,3 +45,4 @@ export default {
 <style scoped>
 @import "../assets/css/style.css";
 </style>
+<!--@import "../assets/js/main-from-template.js";-->

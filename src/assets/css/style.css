@@ -306,7 +306,7 @@ h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  /* background: url("../img/hero-bg.jpg") top right no-repeat; */
+  background: url("../hero-bg.png") top right no-repeat;
   background-size: cover;
   position: relative;
 }
@@ -319,7 +319,7 @@ h6 {
 
 #hero:before {
   content: "";
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.4);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -332,11 +332,11 @@ h6 {
   font-size: 64px;
   font-weight: 700;
   line-height: 56px;
-  color: #45505b;
+  color: white;
 }
 
 #hero p {
-  color: #45505b;
+  color: white;
   margin: 15px 0 0 0;
   font-size: 26px;
   font-family: "Poppins", sans-serif;
@@ -354,7 +354,7 @@ h6 {
 #hero .social-links a {
   font-size: 24px;
   display: inline-block;
-  color: #45505b;
+  color: white;
   line-height: 1;
   margin-right: 20px;
   transition: 0.3s;
