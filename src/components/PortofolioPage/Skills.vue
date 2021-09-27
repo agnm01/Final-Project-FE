@@ -14,9 +14,9 @@
             <div class="progress">
               <span class="skill"
                 >{{ applicationState.userInfo.skills[0].name }}
-                <i class="val">{{
-                  applicationState.userInfo.skills[0].level
-                }}</i></span
+                <i class="val"
+                  >{{ applicationState.userInfo.skills[0].level }}%</i
+                ></span
               >
               <div class="progress-bar-wrap">
                 <div
@@ -33,9 +33,9 @@
             <div class="progress">
               <span class="skill"
                 >{{ applicationState.userInfo.skills[1].name }}
-                <i class="val">{{
-                  applicationState.userInfo.skills[1].level
-                }}</i></span
+                <i class="val"
+                  >{{ applicationState.userInfo.skills[1].level }}%</i
+                ></span
               >
               <div class="progress-bar-wrap">
                 <div
@@ -52,9 +52,9 @@
             <div class="progress">
               <span class="skill"
                 >{{ applicationState.userInfo.skills[2].name }}
-                <i class="val">{{
-                  applicationState.userInfo.skills[2].level
-                }}</i></span
+                <i class="val"
+                  >{{ applicationState.userInfo.skills[2].level }}%</i
+                ></span
               >
               <div class="progress-bar-wrap">
                 <div
@@ -73,9 +73,9 @@
             <div class="progress">
               <span class="skill"
                 >{{ applicationState.userInfo.skills[3].name }}
-                <i class="val">{{
-                  applicationState.userInfo.skills[3].level
-                }}</i></span
+                <i class="val"
+                  >{{ applicationState.userInfo.skills[3].level }}%</i
+                ></span
               >
               <div class="progress-bar-wrap">
                 <div
@@ -92,9 +92,9 @@
             <div class="progress">
               <span class="skill"
                 >{{ applicationState.userInfo.skills[4].name }}
-                <i class="val">{{
-                  applicationState.userInfo.skills[4].level
-                }}</i></span
+                <i class="val"
+                  >{{ applicationState.userInfo.skills[4].level }}%</i
+                ></span
               >
               <div class="progress-bar-wrap">
                 <div
@@ -111,9 +111,9 @@
             <div class="progress">
               <span class="skill"
                 >{{ applicationState.userInfo.skills[5].name }}
-                <i class="val">{{
-                  applicationState.userInfo.skills[5].level
-                }}</i></span
+                <i class="val"
+                  >{{ applicationState.userInfo.skills[5].level }}%</i
+                ></span
               >
               <div class="progress-bar-wrap">
                 <div
