@@ -12,10 +12,10 @@
 - [x] Daily meetings on Microsoft Teams;
 - [x] Two separate Github repositories for frontend part and backend part;
 - [x] Each task that we will do will be transformed into pull requests, and other team members will review and test. For this, we will make branch for every task;
-- [ ] For design, we can use templates (or create by our own) and create a Figma project to implement the wireframes (www.figma.com);
-- [ ] Login page. When a user is logged in, the website shows the portofolio of that user;
-- [ ] Database for the users (only team members - 4 users) where the data is stored;
-- [ ] As guest, I see the login page. If I have an account in database, I can log in and become user (only team members are users);
+- [x] For design, we can use templates (or create by our own) and create a Figma project to implement the wireframes (www.figma.com);
+- [x] Login page. When a user is logged in, the website shows the portofolio of that user;
+- [x] Database for the users (only team members - 4 users) where the data is stored;
+- [x] As guest, I see the login page. If I have an account in database, I can log in and become user (only team members are users);
 - [ ] As user logged in, I can update the information about one of my portofolio sections. I can see my colleagues' portofolio, but I can't edit the information.
 
 ## Project setup
