@@ -1,13 +1,18 @@
 <template>
   <section id="hero" class="d-flex flex-column justify-content-center">
     <div class="container" data-aos="zoom-in" data-aos-delay="100">
-      <h1>Brandon Johnson</h1>
+      <h1>
+        {{
+          applicationState.userInfo.firstName +
+          " " +
+          applicationState.userInfo.lastName
+        }}
+      </h1>
       <p>
-        I'm a
-        <span
-          class="typed"
-          data-typed-items="Designer, Developer, Freelancer, Photographer"
-        ></span>
+        I'm
+        <span class="typed"
+          ><strong>{{ applicationState.userInfo.title }}</strong></span
+        >
       </p>
       <div class="social-links">
         <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
@@ -21,5 +26,13 @@
 </template>
 
 <script>
-export default {};
+import { applicationState } from "../../state";
+
+export default {
+  data() {
+    return {
+      applicationState,
+    };
+  },
+};
 </script>

@@ -169,6 +169,11 @@ h6 {
     margin-left: 3rem;
     margin-right: 3rem;
   }
+
+  .teammates {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 @media (min-width: 992px) {
@@ -453,6 +458,7 @@ section {
   margin-bottom: 20px;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .about .content ul strong {
@@ -548,6 +554,27 @@ section {
   height: 10px;
   transition: 0.9s;
   background-color: #0563bb;
+}
+
+#lol,
+#rocket {
+  width: 100%;
+}
+
+#code {
+  width: 1%;
+}
+
+#web {
+  width: 80%;
+}
+
+#html {
+  width: 85%;
+}
+
+#css {
+  width: 50%;
 }
 
 /*--------------------------------------------------------------
@@ -893,6 +920,7 @@ section {
   transition: all ease-in-out 0.3s;
   background: #fff;
   box-shadow: 0px 5px 90px 0px rgba(110, 123, 131, 0.05);
+  width: 100%;
 }
 
 .services .icon-box .icon {
@@ -1322,4 +1350,9 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#login {
+  padding: 10px 50px 10px 50px;
+  margin-left: 25%;
 }

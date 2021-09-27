@@ -4,42 +4,36 @@
       <div class="container" data-aos="fade-up">
         <div class="section-title">
           <h2>About</h2>
-          <p>
-            Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
-            aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
-            quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
-            fugiat sit in iste officiis commodi quidem hic quas.
-          </p>
         </div>
 
         <div class="row">
           <div class="col-lg-4">
-            <img src="@/assets/profile-img.jpg" class="img-fluid" />
+            <img src="@/assets/profile-img.jpeg" class="img-fluid" />
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content">
-            <h3>UI/UX Designer &amp; Web Developer.</h3>
+            <h3>{{ applicationState.userInfo.title }}</h3>
             <p class="fst-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              {{ applicationState.userInfo.description }}
             </p>
             <div class="row">
               <div class="col-lg-6">
                 <ul>
                   <li>
                     <i class="bi bi-chevron-right"></i>
-                    <strong>Birthday:</strong> <span>1 May 1995</span>
+                    <strong>Birthday:</strong> <span>{{ birthdate }}</span>
                   </li>
                   <li>
                     <i class="bi bi-chevron-right"></i>
-                    <strong>University:</strong> <span>Harvard University</span>
+                    <strong>University:</strong>
+                    <span>{{ applicationState.userInfo.schools[0].name }}</span>
                   </li>
                   <li>
                     <i class="bi bi-chevron-right"></i> <strong>Phone:</strong>
-                    <span>+123 456 7890</span>
+                    <span>{{ applicationState.userInfo.phone }}</span>
                   </li>
                   <li>
                     <i class="bi bi-chevron-right"></i> <strong>City:</strong>
-                    <span>New York, USA</span>
+                    <span>{{ applicationState.userInfo.city }}</span>
                   </li>
                 </ul>
               </div>
@@ -47,32 +41,25 @@
                 <ul>
                   <li>
                     <i class="bi bi-chevron-right"></i> <strong>Age:</strong>
-                    <span>30</span>
+                    <span>{{ applicationState.userInfo.age }}</span>
                   </li>
                   <li>
                     <i class="bi bi-chevron-right"></i>
-                    <strong>Degree:</strong> <span>Master</span>
+                    <strong>Degree:</strong>
+                    <span>{{ applicationState.userInfo.degree }}</span>
                   </li>
                   <li>
                     <i class="bi bi-chevron-right"></i> <strong>Email:</strong>
-                    <span>email@example.com</span>
+                    <span>{{ applicationState.userInfo.email }}</span>
                   </li>
                   <li>
                     <i class="bi bi-chevron-right"></i>
-                    <strong>Website:</strong> <a href="#">www.example.com</a>
+                    <strong>Website:</strong>
+                    <a href="#">{{ applicationState.userInfo.website }}</a>
                   </li>
                 </ul>
               </div>
             </div>
-            <p>
-              Officiis eligendi itaque labore et dolorum mollitia officiis optio
-              vero. Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor
-              incidunt officia tempore. Et eius omnis. Cupiditate ut dicta
-              maxime officiis quidem quia. Sed et consectetur qui quia
-              repellendus itaque neque. Aliquid amet quidem ut quaerat
-              cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium
-              dolores.
-            </p>
           </div>
         </div>
       </div>
@@ -81,7 +68,21 @@
 </template>
 
 <script>
-export default {};
-</script>
+import { applicationState } from "../../state";
+import moment from "moment";
 
-<style></style>
+export default {
+  data() {
+    return {
+      applicationState,
+    };
+  },
+  computed: {
+    birthdate() {
+      return moment(this.applicationState.userInfo.birthdate).format(
+        "D MMMM YYYY"
+      );
+    },
+  },
+};
+</script>

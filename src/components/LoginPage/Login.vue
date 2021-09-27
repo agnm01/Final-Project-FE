@@ -2,7 +2,7 @@
   <body>
     <div class="center">
       <h1>Login</h1>
-      <form >
+      <form>
         <div class="txt_field">
           <input type="text" v-model="username" required />
           <span></span>
@@ -14,7 +14,15 @@
           <label>Password</label>
         </div>
         <div class="pass">Forgot Password?</div>
-        <input type="submit" v-on:click="login" value="login" />
+        <button
+          type="button"
+          class="btn btn-light btn-lg"
+          id="login"
+          style="background-color: #0563bb; color: white"
+          v-on:click="login"
+        >
+          Login
+        </button>
         <div class="signup_link">Not a member? Too bad :(</div>
       </form>
     </div>
@@ -22,32 +30,32 @@
 </template>
 
 <script>
-import axios from  'axios';
+import axios from "axios";
+import { applicationState } from "../../state";
 // import router from '../../router/index.js';
 
 export default {
-  name:"Login",
-  data()
-  {
+  name: "Login",
+  data() {
     return {
-      username:'',
-      password:''
-    }
+      username: "",
+      password: "",
+      applicationState,
+    };
   },
-  methods:{
-    async login()
-    {
-      let result=await axios.get(
+  methods: {
+    async login() {
+      let result = await axios.get(
         `https://localhost:44334/Profile/Login?username=${this.username}&password=${this.password}`
       );
-      console.warn(result);
-      if(result.status==200 && result.data.length>0)
-      {
-        localStorage.setItem("user-info",JSON.stringify(result.data[0]));
-        this.$router.push({name:'Portofolio'});
+      console.log(result.data);
+      if (result.status == 200) {
+        this.applicationState.isLoggedIn = true;
+        this.applicationState.userInfo = result.data;
+        this.$router.push({ name: "Portofolio" });
       }
-    }
-  }
+    },
+  },
 };
 </script>
 

@@ -17,6 +17,7 @@
     "core-js": "^3.6.5",
     "glightbox": "^3.1.0",
     "isotope-layout": "^3.0.6",
+    "moment": "^2.29.1",
     "swiper": "^7.0.6",
     "typed.js": "^2.0.12",
     "vue": "^3.0.0",

@@ -5,19 +5,22 @@
         <div class="section-title">
           <h2>Skills</h2>
           <p>
-            Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
-            aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
-            quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
-            fugiat sit in iste officiis commodi quidem hic quas.
+            {{ applicationState.userInfo.description }}
           </p>
         </div>
 
         <div class="row skills-content">
           <div class="col-lg-6">
             <div class="progress">
-              <span class="skill">HTML <i class="val">100%</i></span>
+              <span class="skill"
+                >{{ applicationState.userInfo.skills[0].name }}
+                <i class="val"
+                  >{{ applicationState.userInfo.skills[0].level }}%</i
+                ></span
+              >
               <div class="progress-bar-wrap">
                 <div
+                  id="lol"
                   class="progress-bar"
                   role="progressbar"
                   aria-valuenow="100"
@@ -28,9 +31,15 @@
             </div>
 
             <div class="progress">
-              <span class="skill">CSS <i class="val">90%</i></span>
+              <span class="skill"
+                >{{ applicationState.userInfo.skills[1].name }}
+                <i class="val"
+                  >{{ applicationState.userInfo.skills[1].level }}%</i
+                ></span
+              >
               <div class="progress-bar-wrap">
                 <div
+                  id="rocket"
                   class="progress-bar"
                   role="progressbar"
                   aria-valuenow="90"
@@ -41,9 +50,15 @@
             </div>
 
             <div class="progress">
-              <span class="skill">JavaScript <i class="val">75%</i></span>
+              <span class="skill"
+                >{{ applicationState.userInfo.skills[2].name }}
+                <i class="val"
+                  >{{ applicationState.userInfo.skills[2].level }}%</i
+                ></span
+              >
               <div class="progress-bar-wrap">
                 <div
+                  id="code"
                   class="progress-bar"
                   role="progressbar"
                   aria-valuenow="75"
@@ -56,9 +71,15 @@
 
           <div class="col-lg-6">
             <div class="progress">
-              <span class="skill">PHP <i class="val">80%</i></span>
+              <span class="skill"
+                >{{ applicationState.userInfo.skills[3].name }}
+                <i class="val"
+                  >{{ applicationState.userInfo.skills[3].level }}%</i
+                ></span
+              >
               <div class="progress-bar-wrap">
                 <div
+                  id="web"
                   class="progress-bar"
                   role="progressbar"
                   aria-valuenow="80"
@@ -69,9 +90,15 @@
             </div>
 
             <div class="progress">
-              <span class="skill">WordPress/CMS <i class="val">90%</i></span>
+              <span class="skill"
+                >{{ applicationState.userInfo.skills[4].name }}
+                <i class="val"
+                  >{{ applicationState.userInfo.skills[4].level }}%</i
+                ></span
+              >
               <div class="progress-bar-wrap">
                 <div
+                  id="html"
                   class="progress-bar"
                   role="progressbar"
                   aria-valuenow="90"
@@ -82,9 +109,15 @@
             </div>
 
             <div class="progress">
-              <span class="skill">Photoshop <i class="val">55%</i></span>
+              <span class="skill"
+                >{{ applicationState.userInfo.skills[5].name }}
+                <i class="val"
+                  >{{ applicationState.userInfo.skills[5].level }}%</i
+                ></span
+              >
               <div class="progress-bar-wrap">
                 <div
+                  id="css"
                   class="progress-bar"
                   role="progressbar"
                   aria-valuenow="55"
@@ -101,5 +134,13 @@
 </template>
 
 <script>
-export default {};
+import { applicationState } from "../../state";
+
+export default {
+  data() {
+    return {
+      applicationState,
+    };
+  },
+};
 </script>
